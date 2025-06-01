@@ -1,0 +1,25 @@
+@media (max-width: 1024px) {
+    .header-overlay {
+      flex-direction: column;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+  
+    .header-photo {
+      width: 300px;
+      height: 300px;
+      margin-left: 0;
+      margin-bottom: 1rem;
+    }
+  
+    .header-links {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+  
+    .your-name {
+      font-size: 2rem;
+    }
+  }
+  
