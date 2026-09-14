@@ -1,716 +1,561 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Lakshmana Rao Gandi – CFD & CAE Engineer</title>
+    <title>Lakshmana Rao Gandi | CFD & CAE Engineer</title>
 
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="mediaqueries.css" />
-
-  <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
 </head>
 
 <body>
 
-  <!-- =========================
-       HEADER
-  ========================== -->
+    <!-- Navigation -->
+    <nav id="desktop-nav">
+        <div class="logo">Lakshmana Rao Gandi</div>
 
-  <header class="custom-header">
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <div class="header-overlay">
+    <!-- Mobile Navigation -->
+    <nav id="hamburger-nav">
+        <div class="logo">Lakshmana Rao</div>
 
-      <img
-        src="3.jpg"
-        alt="Lakshmana Rao Gandi"
-        class="header-photo"
-      />
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
 
-      <div class="header-content">
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About Me</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
 
-        <h1 class="your-name">
-          Lakshmana Rao Gandi
-        </h1>
 
-        <p class="your-role">
-          CFD & CAE Engineer | Simulation • Automation • Data Analysis
-        </p>
+    <!-- Hero Section -->
+    <section id="profile">
 
-        <button class="resume-btn">
-          <a href="2.pdf" download>
-            Download Resume
-          </a>
-        </button>
+        <div class="section__pic-container">
+            <img src="./profile-pic.png"
+                 alt="Lakshmana Rao Gandi"
+                 class="profile-pic">
+        </div>
 
-        <nav class="header-nav">
+        <div class="section__text">
 
-          <ul class="header-links" id="navLinks">
+            <p class="section__text__p1">Hello, I'm</p>
 
-            <li>
-              <a href="#about">About Me</a>
-            </li>
+            <h1 class="title">Lakshmana Rao Gandi</h1>
 
-            <li>
-              <a href="#experience">Experience</a>
-            </li>
+            <p class="section__text__p2">
+                CFD & CAE Engineer
+            </p>
 
-            <li>
-              <a href="#projects">Projects</a>
-            </li>
+            <p class="hero-description">
+                Simulation • Automation • Data Analysis
+            </p>
 
-            <li>
-              <a href="#education">Education</a>
-            </li>
+            <div class="btn-container">
 
-            <li>
-              <a href="#skills">Skills</a>
-            </li>
+                <button class="btn btn-color-2"
+                        onclick="window.open('./2.pdf')">
+                    View CV
+                </button>
 
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
+                <button class="btn btn-color-1"
+                        onclick="location.href='#contact'">
+                    Contact Me
+                </button>
 
-          </ul>
+            </div>
 
-          <div class="menu-toggle" id="menu-toggle">
-            ☰
-          </div>
+            <div id="socials-container">
+
+                <img src="./linkedin.png"
+                     alt="LinkedIn"
+                     class="icon"
+                     onclick="location.href='https://www.linkedin.com/'">
+
+                <img src="./github.png"
+                     alt="GitHub"
+                     class="icon"
+                     onclick="location.href='https://github.com/lakshmanaraogandi'">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About Me -->
+    <section id="about">
+
+        <p class="section__text__p1">Get To Know More</p>
+
+        <h1 class="title">About Me</h1>
+
+        <div class="text-container">
+
+            <p>
+                I am an MSc Aerospace Engineering student at
+                <strong>TU Darmstadt</strong> with a strong interest in
+                computational fluid dynamics, CAE simulation and engineering
+                automation.
+            </p>
+
+            <p>
+                During my Master's thesis at <strong>SICK AG</strong>, I worked
+                on the numerical investigation of disturbed internal gas flows
+                and flow conditioning. My work involved more than
+                <strong>100 OpenFOAM RANS simulations</strong>, CFD
+                pre-processing, mesh generation, post-processing and
+                experimental flow measurements.
+            </p>
+
+            <p>
+                I also developed <strong>Python-based automation workflows</strong>
+                for simulation setup, case preparation, solver execution,
+                post-processing and data analysis. This gave me practical
+                experience combining engineering simulation with programming
+                and Linux-based workflows.
+            </p>
+
+            <p>
+                My broader experience includes thermo-fluid simulations,
+                turbomachinery CFD, heat transfer, CAD, FEM and experimental
+                validation using tools such as OpenFOAM, STAR-CCM+,
+                ANSYS Fluent and ANSYS CFX.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Experience -->
+    <section id="experience">
+
+        <p class="section__text__p1">My Background</p>
+
+        <h1 class="title">Experience</h1>
+
+        <div class="experience-details-container">
+
+            <div class="about-containers">
+
+                <!-- SICK -->
+                <div class="details-container">
+
+                    <h2 class="experience-sub-title">
+                        SICK AG
+                    </h2>
+
+                    <p>
+                        <strong>Master's Thesis – CFD & Simulation</strong>
+                    </p>
+
+                    <p class="experience-date">
+                        Mar 2026 – Aug 2026
+                    </p>
+
+                    <p>
+                        Numerical investigation of disturbed internal gas
+                        flows and flow-conditioning concepts.
+                    </p>
+
+                    <ul class="experience-list">
+                        <li>100+ OpenFOAM RANS simulations</li>
+                        <li>k-ω SST turbulence modelling</li>
+                        <li>Python-based simulation automation</li>
+                        <li>Linux / WSL workflows</li>
+                        <li>Mesh generation and CFD pre-processing</li>
+                        <li>Automated post-processing and data analysis</li>
+                        <li>Experimental flow measurements and validation</li>
+                    </ul>
+
+                </div>
+
+
+                <!-- STFS -->
+                <div class="details-container">
+
+                    <h2 class="experience-sub-title">
+                        TU Darmstadt – STFS
+                    </h2>
+
+                    <p>
+                        <strong>Student Research Assistant</strong>
+                    </p>
+
+                    <p class="experience-date">
+                        Oct 2024 – Mar 2025
+                    </p>
+
+                    <p>
+                        Numerical investigation of thermo-fluid and reactive
+                        flow problems.
+                    </p>
+
+                    <ul class="experience-list">
+                        <li>STAR-CCM+ and OpenFOAM</li>
+                        <li>Heat transfer and fluid flow simulations</li>
+                        <li>CAD and mesh preparation</li>
+                        <li>Boundary-condition and solver setup</li>
+                        <li>Python-based post-processing</li>
+                        <li>Comparison with experimental data</li>
+                    </ul>
+
+                </div>
+
+
+                <!-- TUDSAT -->
+                <div class="details-container">
+
+                    <h2 class="experience-sub-title">
+                        TUDSAT Rocket Club
+                    </h2>
+
+                    <p>
+                        <strong>CFD & FEM Analyst</strong>
+                    </p>
+
+                    <p class="experience-date">
+                        Jul 2023 – Sep 2024
+                    </p>
+
+                    <p>
+                        Engineering analysis and design evaluation for
+                        aerospace components.
+                    </p>
+
+                    <ul class="experience-list">
+                        <li>ANSYS Fluent</li>
+                        <li>ANSYS Mechanical</li>
+                        <li>CAD-based design evaluation</li>
+                        <li>Aerodynamic analysis</li>
+                        <li>Structural FEM analysis</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills">
+
+        <p class="section__text__p1">My Technical Background</p>
+
+        <h1 class="title">Technical Skills</h1>
+
+        <div class="experience-details-container">
+
+            <div class="about-containers">
+
+                <!-- CFD -->
+                <div class="details-container">
+
+                    <h2 class="experience-sub-title">
+                        CFD & CAE
+                    </h2>
+
+                    <div class="article-container">
+
+                        <article>
+                            <h3>OpenFOAM</h3>
+                            <p>RANS / k-ω SST</p>
+                        </article>
+
+                        <article>
+                            <h3>STAR-CCM+</h3>
+                            <p>CFD / Thermo-fluid</p>
+                        </article>
+
+                        <article>
+                            <h3>ANSYS Fluent</h3>
+                            <p>CFD / Aerodynamics</p>
+                        </article>
+
+                        <article>
+                            <h3>ANSYS CFX</h3>
+                            <p>Turbomachinery CFD</p>
+                        </article>
+
+                        <article>
+                            <h3>ANSYS Mechanical</h3>
+                            <p>FEM / Structural Analysis</p>
+                        </article>
+
+                        <article>
+                            <h3>CAD</h3>
+                            <p>SolidWorks / Siemens NX / CATIA</p>
+                        </article>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Programming -->
+                <div class="details-container">
+
+                    <h2 class="experience-sub-title">
+                        Programming & Automation
+                    </h2>
+
+                    <div class="article-container">
+
+                        <article>
+                            <h3>Python</h3>
+                            <p>Automation & Data Analysis</p>
+                        </article>
+
+                        <article>
+                            <h3>NumPy / Pandas</h3>
+                            <p>Numerical Data Processing</p>
+                        </article>
+
+                        <article>
+                            <h3>Matplotlib</h3>
+                            <p>Engineering Visualization</p>
+                        </article>
+
+                        <article>
+                            <h3>MATLAB</h3>
+                            <p>Numerical Analysis</p>
+                        </article>
+
+                        <article>
+                            <h3>Linux / WSL</h3>
+                            <p>Simulation Workflows</p>
+                        </article>
+
+                        <article>
+                            <h3>HTML / CSS</h3>
+                            <p>Web-based Portfolio</p>
+                        </article>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Engineering -->
+                <div class="details-container">
+
+                    <h2 class="experience-sub-title">
+                        Engineering
+                    </h2>
+
+                    <div class="article-container">
+
+                        <article>
+                            <h3>Fluid Mechanics</h3>
+                            <p>Internal & External Flows</p>
+                        </article>
+
+                        <article>
+                            <h3>Heat Transfer</h3>
+                            <p>Thermal CFD</p>
+                        </article>
+
+                        <article>
+                            <h3>Turbulence Modelling</h3>
+                            <p>RANS / k-ω SST</p>
+                        </article>
+
+                        <article>
+                            <h3>Experimental Validation</h3>
+                            <p>Flow Measurements</p>
+                        </article>
+
+                        <article>
+                            <h3>FEM</h3>
+                            <p>Structural Analysis</p>
+                        </article>
+
+                        <article>
+                            <h3>Data Analysis</h3>
+                            <p>Engineering Applications</p>
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Education -->
+    <section id="education">
+
+        <p class="section__text__p1">My Academic Background</p>
+
+        <h1 class="title">Education</h1>
+
+        <div class="education-container">
+
+            <div class="details-container">
+
+                <h2 class="experience-sub-title">
+                    TU Darmstadt
+                </h2>
+
+                <p>
+                    <strong>MSc Aerospace Engineering</strong>
+                </p>
+
+                <p>
+                    Germany
+                </p>
+
+                <p>
+                    Focus: CFD, Fluid Mechanics, Heat Transfer,
+                    Thermodynamics, FEM and Numerical Methods
+                </p>
+
+            </div>
+
+
+            <div class="details-container">
+
+                <h2 class="experience-sub-title">
+                    Vignan Institute of Information Technology
+                </h2>
+
+                <p>
+                    <strong>Bachelor of Mechanical Engineering</strong>
+                </p>
+
+                <p>
+                    India
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <p class="section__text__p1">Get In Touch</p>
+
+        <h1 class="title">Contact Me</h1>
+
+        <div class="contact-info-upper-container">
+
+            <div class="contact-info-container">
+
+                <p>
+                    Email:
+                    <a href="mailto:luckylaxman210@gmail.com">
+                        luckylaxman210@gmail.com
+                    </a>
+                </p>
+
+            </div>
+
+
+            <div class="contact-info-container">
+
+                <p>
+                    LinkedIn:
+                    <a href="https://www.linkedin.com/">
+                        LinkedIn Profile
+                    </a>
+                </p>
+
+            </div>
+
+
+            <div class="contact-info-container">
+
+                <p>
+                    GitHub:
+                    <a href="https://github.com/lakshmanaraogandi">
+                        github.com/lakshmanaraogandi
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <nav>
+
+            <div class="nav-links-container">
+
+                <ul class="nav-links">
+
+                    <li>
+                        <a href="#about">About Me</a>
+                    </li>
+
+                    <li>
+                        <a href="#experience">Experience</a>
+                    </li>
+
+                    <li>
+                        <a href="#skills">Skills</a>
+                    </li>
+
+                    <li>
+                        <a href="#education">Education</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
 
         </nav>
 
-        <button
-          class="dark-toggle"
-          id="darkModeBtn"
-          aria-label="Toggle dark mode"
-        >
-          🌙
-        </button>
-
-      </div>
-    </div>
-
-  </header>
-
-
-  <main>
-
-    <!-- =========================
-         ABOUT
-    ========================== -->
-
-    <section id="about" class="section about">
-
-      <div class="container">
-
-        <h2>About Me</h2>
-
         <p>
-          I am a Master's student in Aerospace Engineering at
-          <strong>TU Darmstadt</strong> with hands-on experience in
-          computational fluid dynamics, CAE simulation, numerical analysis,
-          CAD, FEM and experimental validation.
+            © 2026 Lakshmana Rao Gandi. All rights reserved.
         </p>
 
-        <p>
-          My experience includes
-          <strong>OpenFOAM, STAR-CCM+, ANSYS Fluent, ANSYS CFX
-          and ANSYS Mechanical</strong>, with projects covering internal
-          flows, turbomachinery, thermo-fluid systems, aerodynamics,
-          heat transfer and structural analysis.
-        </p>
+    </footer>
 
-        <p>
-          During my Master's thesis at <strong>SICK AG</strong>, I performed
-          more than 100 RANS simulations of disturbed internal gas flows and
-          developed a <strong>Python-based automated CFD workflow</strong>
-          covering case setup, meshing, simulation execution and
-          post-processing. I also worked with experimental flow measurements
-          to compare and validate the numerical results.
-        </p>
 
-        <p>
-          I am particularly interested in combining
-          <strong>engineering simulation, automation, data analysis and
-          software-based process improvement</strong> to develop efficient
-          and reliable engineering workflows.
-        </p>
-
-      </div>
-
-    </section>
-
-
-    <!-- =========================
-         EXPERIENCE
-    ========================== -->
-
-    <section id="experience" class="section experience">
-
-      <div class="container">
-
-        <h2>Experience</h2>
-
-
-        <!-- SICK -->
-
-        <div class="experience-item">
-
-          <h3>
-            Master's Thesis / Internship – SICK AG
-          </h3>
-
-          <p>
-            <strong>Mar 2026 – Aug 2026 | Waldkirch, Germany</strong>
-          </p>
-
-          <ul>
-
-            <li>
-              Performed <strong>100+ OpenFOAM CFD simulations</strong>
-              of disturbed internal gas flows using the
-              <strong>RANS k–ω SST</strong> turbulence model.
-            </li>
-
-            <li>
-              Analysed flow behaviour, pressure loss, turbulence decay
-              and temperature-related flow effects through parameter
-              and sensitivity studies.
-            </li>
-
-            <li>
-              Developed a <strong>Python-based automated simulation
-              workflow</strong> covering case setup, meshing, simulation
-              execution and post-processing.
-            </li>
-
-            <li>
-              Worked with <strong>OpenFOAM and STAR-CCM+</strong> during
-              the initial comparison of simulation approaches.
-            </li>
-
-            <li>
-              Conducted pipe-flow experiments using flow sensors and
-              correlated CFD results with experimental measurements
-              for validation.
-            </li>
-
-            <li>
-              Evaluated and documented numerical and experimental results
-              to support simulation-based engineering decisions.
-            </li>
-
-          </ul>
-
-        </div>
-
-
-        <!-- STFS -->
-
-        <div class="experience-item">
-
-          <h3>
-            Student Research Assistant – Institute for Simulation of
-            Reactive Thermo-Fluid Systems (STFS), TU Darmstadt
-          </h3>
-
-          <p>
-            <strong>Oct 2024 – Mar 2025 | Darmstadt, Germany</strong>
-          </p>
-
-          <ul>
-
-            <li>
-              Performed thermo-fluid simulations using
-              <strong>STAR-CCM+ and OpenFOAM</strong> for heat transfer
-              and reactive-flow applications.
-            </li>
-
-            <li>
-              Investigated temperature, heat transfer, flow and
-              turbulence behaviour using numerical simulations.
-            </li>
-
-            <li>
-              Supported hydrogen-oxygen combustion simulations involving
-              multiple reacting species and coupled thermal-fluid behaviour.
-            </li>
-
-            <li>
-              Prepared CAD geometries, meshes, boundary conditions,
-              solver setups and simulation models for numerical analysis.
-            </li>
-
-            <li>
-              Compared simulation results with experimental data and
-              performed quantitative post-processing using Python.
-            </li>
-
-          </ul>
-
-        </div>
-
-
-        <!-- TUDSAT -->
-
-        <div class="experience-item">
-
-          <h3>
-            CFD & FEM Analyst – TUDSAT Rocket Club
-          </h3>
-
-          <p>
-            <strong>Jul 2023 – Sep 2024 | TU Darmstadt, Germany</strong>
-          </p>
-
-          <ul>
-
-            <li>
-              Supported aerodynamic and structural development of rocket
-              hardware through <strong>CFD and FEM analyses</strong>.
-            </li>
-
-            <li>
-              Assisted in component design evaluation and
-              simulation-based engineering improvements.
-            </li>
-
-            <li>
-              Used <strong>ANSYS Fluent, ANSYS Mechanical, Python
-              and MATLAB</strong> for engineering analysis and
-              technical evaluation.
-            </li>
-
-          </ul>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =========================
-         PROJECTS
-    ========================== -->
-
-    <section id="projects" class="section projects">
-
-      <div class="container">
-
-        <h2>Projects</h2>
-
-        <div class="project-list">
-
-
-          <!-- PROJECT 1 -->
-
-          <a
-            href="project1.html"
-            class="project-card card-bg-1"
-          >
-
-            <div class="overlay">
-
-              <h3>
-                SICK AG – CFD & Simulation Automation
-              </h3>
-
-              <p>
-                OpenFOAM RANS simulations and Python-based automation
-                of CFD case setup, meshing, execution and post-processing.
-              </p>
-
-            </div>
-
-          </a>
-
-
-          <!-- PROJECT 2 -->
-
-          <a
-            href="project2.html"
-            class="project-card card-bg-2"
-          >
-
-            <div class="overlay">
-
-              <h3>
-                Transonic Compressor CFD
-              </h3>
-
-              <p>
-                Single-stage transonic compressor simulation using
-                ANSYS CFX, RANS k–ω SST and MATLAB with experimental
-                comparison.
-              </p>
-
-            </div>
-
-          </a>
-
-
-          <!-- PROJECT 3 -->
-
-          <a
-            href="project3.html"
-            class="project-card card-bg-3"
-          >
-
-            <div class="overlay">
-
-              <h3>
-                Thermo-Fluid & Reactive Flow
-              </h3>
-
-              <p>
-                STAR-CCM+ and OpenFOAM simulations involving heat
-                transfer, temperature fields and reactive flows.
-              </p>
-
-            </div>
-
-          </a>
-
-
-          <!-- PROJECT 4 -->
-
-          <a
-            href="project4.html"
-            class="project-card card-bg-4"
-          >
-
-            <div class="overlay">
-
-              <h3>
-                Wind Tunnel & Airfoil CFD
-              </h3>
-
-              <p>
-                Siemens NX and ANSYS Fluent simulations with
-                CFD-to-experiment comparison and aerodynamic
-                performance analysis.
-              </p>
-
-            </div>
-
-          </a>
-
-
-          <!-- PROJECT 5 -->
-
-          <a
-            href="tudsat.html"
-            class="project-card card-bg-1"
-          >
-
-            <div class="overlay">
-
-              <h3>
-                TUDSAT – CFD & FEM
-              </h3>
-
-              <p>
-                Aerodynamic and structural analysis of rocket hardware
-                using ANSYS Fluent and ANSYS Mechanical.
-              </p>
-
-            </div>
-
-          </a>
-
-
-          <!-- PROJECT 6 -->
-
-          <a
-            href="adsb.html"
-            class="project-card card-bg-2"
-          >
-
-            <div class="overlay">
-
-              <h3>
-                ADS-B Flight Path Prediction
-              </h3>
-
-              <p>
-                Python-based analysis of 50,000+ flight trajectories
-                using regression, Random Forest and LSTM models.
-              </p>
-
-            </div>
-
-          </a>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =========================
-         EDUCATION
-    ========================== -->
-
-    <section id="education" class="section education">
-
-      <div class="container">
-
-        <h2>Education</h2>
-
-
-        <div class="education-item">
-
-          <h3>
-            Master's in Aerospace Engineering
-          </h3>
-
-          <p>
-            <strong>Technische Universität Darmstadt</strong>
-          </p>
-
-          <p>
-            Apr 2023 – Present
-          </p>
-
-          <p>
-            Focus areas:
-            CFD, Fluid Mechanics, Heat Transfer, Thermodynamics,
-            FEM, Transport Phenomena, Turbulence Modelling,
-            Numerical Methods and Turbomachinery Aerothermodynamics.
-          </p>
-
-        </div>
-
-
-        <div class="education-item">
-
-          <h3>
-            Bachelor's in Mechanical Engineering
-          </h3>
-
-          <p>
-            <strong>Vignan's Institute of Information Technology</strong>
-          </p>
-
-          <p>
-            Jul 2017 – Jun 2021
-          </p>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- =========================
-         CERTIFICATIONS
-    ========================== -->
-
-    <section id="certifications" class="section certifications">
-
-      <div class="container">
-
-        <h2>Certifications</h2>
-
-        <p>
-          <strong>Siemens NX Certification</strong>
-          – 3D modelling, assemblies, surface modelling and technical drawings.
-        </p>
-
-      </div>
-
-    </section>
-
-
-    <!-- =========================
-         SKILLS
-    ========================== -->
-
-    <section id="skills" class="section skills">
-
-      <div class="container">
-
-        <h2>Technical Skills</h2>
-
-        <ul>
-
-          <li>
-            <strong>CFD & CAE:</strong>
-            OpenFOAM, STAR-CCM+, ANSYS Fluent,
-            ANSYS CFX, ANSYS Mechanical, CFD,
-            RANS, turbulence modelling, internal/external flows,
-            numerical modelling
-          </li>
-
-          <li>
-            <strong>Thermal & Fluid Engineering:</strong>
-            Heat transfer, thermal-fluid simulation,
-            fluid mechanics, thermodynamics,
-            temperature and flow analysis
-          </li>
-
-          <li>
-            <strong>Programming & Automation:</strong>
-            Python, MATLAB, simulation automation,
-            pre-processing, post-processing,
-            numerical data analysis
-          </li>
-
-          <li>
-            <strong>Data Analysis & Machine Learning:</strong>
-            NumPy, Pandas, Matplotlib,
-            regression, Random Forest, LSTM,
-            large-scale data processing
-          </li>
-
-          <li>
-            <strong>CAD & Design:</strong>
-            SolidWorks, Siemens NX, CATIA,
-            AutoCAD, CAD geometry preparation,
-            3D modelling and design modification
-          </li>
-
-          <li>
-            <strong>FEM & Engineering Analysis:</strong>
-            ANSYS Mechanical, FEM,
-            structural analysis, parameter studies,
-            sensitivity analysis
-          </li>
-
-          <li>
-            <strong>Experimental & Validation:</strong>
-            Flow measurements, flow sensors,
-            laboratory testing,
-            simulation-to-experiment correlation,
-            experimental validation
-          </li>
-
-          <li>
-            <strong>Operating Systems:</strong>
-            Linux, Windows, WSL, HPC workflows
-          </li>
-
-          <li>
-            <strong>Web & Software:</strong>
-            HTML, CSS, Git/GitHub
-          </li>
-
-        </ul>
-
-      </div>
-
-    </section>
-
-
-    <!-- =========================
-         LANGUAGES
-    ========================== -->
-
-    <section id="languages" class="section languages">
-
-      <div class="container">
-
-        <h2>Languages</h2>
-
-        <ul>
-
-          <li>
-            <strong>English:</strong> C1 – Fluent
-          </li>
-
-          <li>
-            <strong>German:</strong> B1 – Intermediate
-          </li>
-
-          <li>
-            <strong>Telugu:</strong> Native
-          </li>
-
-          <li>
-            <strong>Hindi:</strong> Native
-          </li>
-
-        </ul>
-
-      </div>
-
-    </section>
-
-
-    <!-- =========================
-         CONTACT
-    ========================== -->
-
-    <section id="contact" class="section contact">
-
-      <div class="container">
-
-        <h2>Contact</h2>
-
-        <p>
-          <strong>Email:</strong>
-          <a href="mailto:lakshmanaraogandi27@gmail.com">
-            lakshmanaraogandi27@gmail.com
-          </a>
-        </p>
-
-        <p>
-          <strong>Phone:</strong>
-          +49 15753692318
-        </p>
-
-        <p>
-          <strong>LinkedIn:</strong>
-          <a
-            href="https://www.linkedin.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn Profile
-          </a>
-        </p>
-
-        <p>
-          <strong>GitHub:</strong>
-          <a
-            href="https://github.com/lakshmanaraogandi"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            github.com/lakshmanaraogandi
-          </a>
-        </p>
-
-      </div>
-
-    </section>
-
-  </main>
-
-
-  <!-- =========================
-       FOOTER
-  ========================== -->
-
-  <footer class="footer">
-
-    <p>
-      &copy; 2026 Lakshmana Rao Gandi. All rights reserved.
-    </p>
-
-  </footer>
-
-
-  <!-- =========================
-       JAVASCRIPT
-  ========================== -->
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
